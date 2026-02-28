@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-multipart
+python-dotenv
+requests
+pypdf
+gtts
+groq
+plotly
+scipy
