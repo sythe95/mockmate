@@ -1,10 +1,18 @@
 # 🎙️ MockMate: AI Technical Hiring Manager
 
+<div align="center">
+
 ![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?style=for-the-badge&logo=fastapi)
 ![Model](https://img.shields.io/badge/Model-GPT--OSS--120B-412991?style=for-the-badge)
 ![Whisper](https://img.shields.io/badge/STT-Whisper--large--v3-f55036?style=for-the-badge)
 ![ElevenLabs](https://img.shields.io/badge/ElevenLabs-Turbo_v2.5-black?style=for-the-badge)
+
+<br/>
+
+<img src="./assets/home.png" alt="MockMate Dashboard" width="100%" style="border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
+
+</div>
 
 MockMate is a production-grade, full-stack AI interview platform designed to simulate high-stakes technical interviews. It ingests candidate resumes, orchestrates real-time conversational AI with ultra-low latency voice models, and generates detailed post-interview analytics using chain-of-thought evaluation.
 
@@ -15,6 +23,31 @@ MockMate is a production-grade, full-stack AI interview platform designed to sim
 * **The "Shadow Dossier" (Chain of Thought):** Features a transparent backend monologue where the **120B parameter LLM** evaluates candidate responses in real-time *before* speaking, reducing hallucination and ensuring objective grading.
 * **Data-Driven Analytics:** Post-interview dashboards feature interactive, animated Radar Charts (via Recharts) mapping fidelity across Technical Skills, Problem Solving, and Communication.
 * **Premium Glassmorphism UI:** Built with Next.js, Tailwind CSS, and Framer Motion for a fluid, state-driven, "Vercel-tier" user experience.
+
+## 📸 Platform Showcase
+
+<table>
+  <tr>
+    <td align="center">
+      <b>Live Interview Interface</b><br/>
+      <img src="./assets/chat.png" alt="Live Interview" width="100%"/>
+    </td>
+    <td align="center">
+      <b>Shadow Dossier</b><br/>
+      <img src="./assets/chat_history.png" alt="Shadow Dossier" width="100%"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Performance Analytics and Transcript</b><br/>
+      <img src="./assets/analytics.png" alt="Analytics" width="100%"/>
+    </td>
+        <td align="center" colspan="2">
+        <b>Document Parsing & Context Injection</b><br/>
+        <img src="./assets/profile_synchronised.png" alt="Resume Parsing" width="100%"/>
+    </td>
+  </tr>
+</table>
 
 ## 🧠 System Architecture
 
