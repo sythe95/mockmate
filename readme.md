@@ -40,7 +40,7 @@ MockMate is a production-grade, full-stack AI interview platform designed to sim
   <tr>
     <td align="center">
       <b>Performance Analytics and Transcript</b><br/>
-      <img src="./assets/analytics.png" alt="Analytics" width="100%"/>
+      <img src="./assets/analytics.PNG" alt="Analytics" width="100%"/>
     </td>
         <td align="center" colspan="2">
         <b>Document Parsing & Context Injection</b><br/>
