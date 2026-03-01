@@ -51,6 +51,37 @@ MockMate is a production-grade, full-stack AI interview platform designed to sim
 
 ## 🧠 System Architecture
 
+```mermaid
+graph TD
+    User((👤 Candidate)) -->|1. Uploads Resume| Parser[📄 Document Parser]
+    Parser -->|2. Parsed Context| LLM_Init{🧠 GPT-OSS 120B}
+    LLM_Init -->|3. Greets Candidate| User
+
+    User -->|4. Replies via Text or Voice| InputHandler{Input Router}
+    
+    InputHandler -->|Voice Blob| STT[🎙️ Whisper large-v3 STT]
+    InputHandler -->|Text Input| Context[Context Manager]
+    STT -->|Transcript| Context
+
+    Context -->|5. Full Context Trigger| LLM_Core{🧠 GPT-OSS 120B}
+
+    LLM_Core -->|6a. Chat Response| TTS[🔊 ElevenLabs TTS]
+    LLM_Core -->|6b. Internal Marks| DB[(🗄️ SQLite DB)]
+
+    TTS -->|7. Plays Audio| User
+
+    User -.->|8. Concludes Session| UI[📊 Shadow Dossier UI]
+    DB -->|Fetches History| UI
+    
+    classDef user fill:#3b82f6,stroke:#bfdbfe,stroke-width:2px,color:#fff;
+    classDef ai fill:#6366f1,stroke:#c7d2fe,stroke-width:2px,color:#fff;
+    classDef db fill:#10b981,stroke:#a7f3d0,stroke-width:2px,color:#fff;
+    
+    class User user;
+    class LLM_Init,LLM_Core ai;
+    class DB,UI db;
+```
+
 ### 1. Client Input Layer
 *   **Audio Capture:** Captured via the browser's [MediaDevices API](https://developer.mozilla.org).
 *   **Backend:** Sent directly to a [FastAPI](https://fastapi.tiangolo.com) server for ingestion.
