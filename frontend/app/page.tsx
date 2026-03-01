@@ -323,7 +323,7 @@ export default function Home() {
         {phase === "INTERVIEW" && (
           <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className="flex flex-col h-screen max-w-5xl mx-auto relative z-10">
             {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-            <audio ref={audioPlayerRef} src={audioUrl || ""} />
+            <audio ref={audioPlayerRef} src={audioUrl || undefined} />
 
             {/* Premium Glass Header */}
             <div className="backdrop-blur-2xl bg-[#030305]/40 border-b border-white/[0.08] px-8 py-5 flex justify-between items-center sticky top-0 z-30 shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
