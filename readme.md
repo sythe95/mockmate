@@ -14,7 +14,26 @@
 
 </div>
 
-MockMate is a production-grade, full-stack AI interview platform designed to simulate high-stakes technical interviews. It ingests candidate resumes, orchestrates real-time conversational AI with ultra-low latency voice models, and generates detailed post-interview analytics using chain-of-thought evaluation.
+MockMate is a full-stack AI interview platform that simulates realistic technical interviews using voice interaction and contextual understanding of candidate profiles. It ingests candidate resumes, orchestrates real-time conversational AI with ultra-low latency voice models, and generates detailed post-interview analytics using chain-of-thought evaluation.
+
+## 🎯 Who This Is For
+
+- Job seekers preparing for technical interviews  
+- Recruiters looking to automate initial screening  
+- EdTech platforms building interview simulation tools
+
+## 🧩 Problem
+
+Technical interview preparation is often inconsistent, lacks personalization, and does not simulate real-time pressure or feedback.
+
+Recruiters also struggle to scale initial candidate screening without losing quality.
+
+## 🚀 What This Enables
+
+- Realistic mock interviews with voice interaction  
+- Personalized questions based on candidate experience  
+- Instant feedback and performance analytics  
+- Scalable interview simulation without human intervention  
 
 ## ✨ Core Features
 
